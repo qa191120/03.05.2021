@@ -1,0 +1,22 @@
+TDD:
+- create a class called RoundedSizeRectangle
+- define m_width, m_height as Integer (or int)
+- in the ctor get 2 floats - RoundedSizeRectangle(float width, float height)
+  in the ctor round the values, for RoundedSizeRectangle(5.8, 7.1)
+  will set m_width to 6 and m_height to 7 (because they were rounded)
+- write a test that creates an instance and checks using reflection if the values were correctly rounded
+- define an EMPTY function called getArea which returns the area (return 0 at start)
+- now write a TDD test which creates an instance and calls getArea (it should fail ofcourse)
+- now implement the getArea function and run the test. it should pass
+
+Web server:
+- create a new spring project with tomcat web server
+- create a controller called WordController
+- create a function at route /counter which gets a string parameter and print the number of characters
+  i.e. http://localhost:8080/counter?word=hello
+  will print:
+  5
+- create a function at route /concat which gets 2 string parameters and print them with underline
+  i.e. http://localhost:8080/concat?word1=hello&word2=world
+  will print:
+  hello world
