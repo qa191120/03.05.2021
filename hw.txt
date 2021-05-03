@@ -14,9 +14,9 @@ Web server:
 - create a controller called WordController
 - create a function at route /counter which gets a string parameter and print the number of characters
   i.e. http://localhost:8080/counter?word=hello
-  will print:
+  will return a page with the number 5:
   5
 - create a function at route /concat which gets 2 string parameters and print them with underline
   i.e. http://localhost:8080/concat?word1=hello&word2=world
-  will print:
+  will return a page with the text "hello world":
   hello world
